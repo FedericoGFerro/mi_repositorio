@@ -1,0 +1,240 @@
+html {
+    background-image: url("img/baas-background2.jpg");
+    background-attachment: fixed; 
+
+}
+
+nav{
+    background-color: #dbb372;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+nav ul li{
+    background-color: white;
+    width: auto;
+    height: auto;
+    border-right: solid 2px #c78b2c;
+    border-left: solid 2px #c78b2c;
+    padding: 16px 40px;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white; 
+    text-decoration: none;  
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;    
+}
+
+main h1 {
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    height: auto;
+}
+
+/* index */
+
+    .content{
+        width: 100%;
+        display: flex;
+    }
+
+    .text-index{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .video-index{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+/* info */
+
+    .info{
+        width: 100%;
+        display: flex;
+    }
+
+    .info-sexto{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .info-pieck{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        margin-left: 5px;
+    }
+
+/* gallery */
+
+    .galeria-sexto{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 300px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .galeria-sexto-titulo{
+        align-self: center;
+        justify-self: center;
+        background-color: #dbb372;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sexto3{
+        grid-row: span 2;
+
+    }
+
+    .sexto6{
+        grid-column: span 2;
+    }
+
+    .galeria-pieck{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 300px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+    }
+
+    .galeria-pieck-titulo{
+        align-self: center;
+        justify-self: center;
+        background-color: #dbb372;
+        height: 100%;
+        width: 100%;
+    }
+
+    .pieck1{
+        grid-row: span 2;
+    }
+
+    .pieck4{
+        grid-row: span 2;
+    }
+
+
+/* ub */ 
+
+    .ubicacion{
+        width: 100%;
+        display: flex;
+    }
+
+    .ubi-foto{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .map{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        margin-left: 5px;
+    }
+
+/* contact */
+
+    .contact{
+        width: 100%;
+        display: flex;
+    }
+
+    .form{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .contact-foto{
+        background-color: rgb(190, 190, 190);
+        width: 100%;
+        margin-left: 5px;
+    }
+
+footer {
+    background-color: #dbb372;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media screen and (max-width: 768px){
+    nav ul li{
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+
+    .galeria-sexto{
+        grid-auto-rows: 100px;
+
+    }
+
+    .galeria-pieck{
+        grid-auto-rows: 100px;
+    }
+
+    .content{
+        width: auto;
+        display: grid;
+        
+    }
+
+    .contact-foto{
+        width: 300px;
+        height: auto;
+    }
+
+}
